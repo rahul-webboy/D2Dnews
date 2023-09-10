@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>https://www.D2Dnews.com</title>
+    <link rel="stylesheet" href="newsproject.css">
+</head>
+
+
+<body>
+
+
+    <!-- nav  -->
+
+
+
+
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#">
+               <img id="logo"  onclick="reload()" src="logo1.png" alt="">
+            </a>
+
+            <div class="nav-list ">
+                <ul>
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavitemclick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavitemclick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavitemclick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+
+                <input id="search-text" placeholder="e.g. science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- main  -->
+
+
+
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+
+    </main>
+
+
+    <!-- templtete  -->
+
+
+
+    
+    <template id="templete-news-card" >
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://images.indianexpress.com/2023/09/Rohit-Gill.jpg?w=750" alt="" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="title">Asia Cup 2023</h3>
+                <h6 id="news-source">india is now in super 4s</h6>
+                <p id="desc">india won by 10 wickets but the nepal efforts was more shining than the india victory.Asia Cup2023 Highlights, India vs Nepal Match Today: The weather forecast for Pallekele is 80% of rain in the morning and around 65% chances of rain in the afternoon.</p>
+
+
+            </div>
+        </div>
+
+
+    </template>
+
+
+
+
+
+
+
+
+
+<footer>
+    <hr>
+    <div class="footer">
+        <h5>D2D news | 2023 | All rights reserved.</h5>
+        
+    </div>
+</footer>
+
+
+
+
+
+
+    <script src="newsproject.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- if we are using templete then if something is inside the templete then that will not be visible  -->
